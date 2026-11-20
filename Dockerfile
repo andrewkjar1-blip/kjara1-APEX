@@ -23,7 +23,7 @@ RUN git clone https://github.com/corbinq/apex.git /opt/apex && \
     apex --help
 
 RUN mkdir -p /pipeline
-COPY run_apex_trans.sh /pipeline/run_apex_trans.sh
+COPY scripts/run_apex_trans.sh /pipeline/run_apex_trans.sh
 RUN chmod +x /pipeline/run_apex_trans.sh
 
 WORKDIR /pipeline
