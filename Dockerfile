@@ -27,7 +27,7 @@ RUN git clone https://github.com /opt/apex && \
     chmod +x /usr/local/bin/apex
 
 RUN mkdir -p /pipeline
-COPY run_apex_trans.sh /pipeline/run_apex_trans.sh
+COPY scripts/run_apex_trans.sh /pipeline/run_apex_trans.sh
 RUN chmod +x /pipeline/run_apex_trans.sh
 
 WORKDIR /pipeline
