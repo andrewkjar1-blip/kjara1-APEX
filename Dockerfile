@@ -19,7 +19,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         libboost-math-dev \
     && rm -rf /var/lib/apt/lists/*
 
-RUN git clone https://github.com /opt/apex && \
+RUN git clone https://github.com/corbinq/apex.git /opt/apex && \
     cd /opt/apex && \
     bash get_dependencies.sh && \
     make && \
